@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>tic tac toe</title>
+  <script src='lib/jquery/dist/jquery.js'></script>
+  <script src='lib/underscore/underscore.js'></script>
+  <script src='lib/backbone/backbone.js'></script>
+  <link rel='stylesheet' type='text/css' href='styles/styles.css'/>
+</head>
+<body>
+  <script src='src/models/SpaceModel.js'></script>
+  <script src='src/views/SpaceView.js'></script>
+  <script src='src/collections/Grid.js'></script>
+  <script src='src/views/GridView.js'></script>
+  <script src='src/models/AppModel.js'></script>
+  <script src='src/views/AppView.js'></script>
+
+  <script>
+
+    var gridSize = 3;   // Change to increase board size (logic should scale for larger boards).
+    var appView = new AppView({model: new AppModel(gridSize)});
+
+    $('body').append(appView.render());
+
+  </script>
+</body>
+</html>
