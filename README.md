@@ -8,3 +8,4 @@ http://lawmay.github.io/tictactoe
 ### TODO
 * Create sidebar with results and grid size options.
 * Remove alert box.
+* Create tests.
